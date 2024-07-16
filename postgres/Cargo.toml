@@ -27,7 +27,7 @@ serde = { package = "serde", version = "1.0", features = [
     "derive",
 ], optional = true }
 tokio = { version = "1.29", features = ["rt"] }
-tokio-postgres = { git = "https://github.com/chandr-andr/rust-postgres.git", branch = "psqlpy" }
+tokio-postgres = { git = "https://github.com/chandr-andr/rust-postgres.git", branch = "psqlpy_test" }
 tracing = "0.1.37"
 
 [dev-dependencies]
