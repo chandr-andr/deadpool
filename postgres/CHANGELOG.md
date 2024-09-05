@@ -9,6 +9,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.14.0] - 2024-06-04
+
+- Add back `async_trait` to the `GenericClient` trait.
+  The removal of `async_trait` caused some errors for code using
+  the generic client interface. A test was added to ensure future
+  removals of `async_trait` will not cause this code to break.
+
+## [0.13.2] - 2024-05-07
+
+- Add WASM support
+- Expose API for providing a custom `Connect` implementation.
+- Add `+ Send` to futures returned by `GenericClient`
+
+## [0.13.1] - 2024-05-04
+
+- Update `deadpool` dependency to version `0.12`
+- Add `LICENSE-APACHE` and `LICENSE-MIT` files to published crates
+
 ## [0.13.0] - 2024-04-01
 
 - Update `deadpool` dependency to version `0.11`
@@ -197,7 +215,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - First release
 
 <!-- next-url -->
-[Unreleased]: https://github.com/bikeshedder/deadpool/compare/deadpool-postgres-v0.13.0...HEAD
+[Unreleased]: https://github.com/bikeshedder/deadpool/compare/deadpool-postgres-v0.14.0...HEAD
+[0.14.0]: https://github.com/bikeshedder/deadpool/compare/deadpool-postgres-v0.13.2...deadpool-postgres-v0.14.0
+[0.13.2]: https://github.com/bikeshedder/deadpool/compare/deadpool-postgres-v0.13.1...deadpool-postgres-v0.13.2
+[0.13.1]: https://github.com/bikeshedder/deadpool/compare/deadpool-postgres-v0.13.0...deadpool-postgres-v0.13.1
 [0.13.0]: https://github.com/bikeshedder/deadpool/compare/deadpool-postgres-v0.12.1...deadpool-postgres-v0.13.0
 [0.12.1]: https://github.com/bikeshedder/deadpool/compare/deadpool-postgres-v0.12.0...deadpool-postgres-v0.12.1
 [0.12.0]: https://github.com/bikeshedder/deadpool/compare/deadpool-postgres-v0.11.0...deadpool-postgres-v0.12.0

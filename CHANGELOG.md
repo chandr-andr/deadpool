@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.12.1] - 2024-05-07
+
+- Add WASM support
+
+## [0.12.0] - 2024-05-04
+
+- Add `Send` to `Manager::Type` and `Manager::Error` associated types
+- Add `Send` to `Manager::create` and `Manager::recycle` return types
+
 ## [0.11.2] - 2024-04-10
 
 - Make `Timeouts::new` and `Timeouts::wait_millis` functions const fns
@@ -185,7 +194,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - First release
 
 <!-- next-url -->
-[Unreleased]: https://github.com/bikeshedder/deadpool/compare/deadpool-v0.11.2...HEAD
+[Unreleased]: https://github.com/bikeshedder/deadpool/compare/deadpool-v0.12.1...HEAD
+[0.12.1]: https://github.com/bikeshedder/deadpool/compare/deadpool-v0.12.0...deadpool-v0.12.1
+[0.12.0]: https://github.com/bikeshedder/deadpool/compare/deadpool-v0.11.2...deadpool-v0.12.0
 [0.11.2]: https://github.com/bikeshedder/deadpool/compare/deadpool-v0.11.1...deadpool-v0.11.2
 [0.11.1]: https://github.com/bikeshedder/deadpool/compare/deadpool-v0.11.0...deadpool-v0.11.1
 [0.11.0]: https://github.com/bikeshedder/deadpool/compare/deadpool-v0.10.0...deadpool-v0.11.0
